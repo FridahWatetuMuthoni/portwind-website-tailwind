@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portwind Website</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="font-nunito">
+    <!-- Introduction Section -->
+    <section
+      class="h-[60vh] lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden"
+      id="home"
+    >
+      <!-- Navigation Bar -->
+      <nav class="w-full fixed top-0 bg-white z-10">
+        <section
+          class="container mx-auto py-5 flex items-center justify-between"
+        >
+          <section class="flex items-center gap-2">
+            <img class="w-8" src="./dist/images/logo.png" alt="logo" />
+            <span class="text-2xl font-bold text-indigo-900">Portwind.</span>
+          </section>
+          <ul
+            class="hidden md:flex space-x-10 text-gray-600 uppercase font-bold text-sm"
+          >
+            <li class="hover:text-gray-400"><a href="#home">Homepage</a></li>
+            <li class="hover:text-gray-400"><a href="#about">About</a></li>
+            <li class="hover:text-gray-400">
+              <a href="#services">Services</a>
+            </li>
+            <li class="hover:text-gray-400"><a href="#works">works</a></li>
+            <li class="hover:text-gray-400"><a href="#contact">contact</a></li>
+          </ul>
+          <section
+            id="menu"
+            class="hidden p-5 bg-indigo-900 absolute left-0 top-0 w-full rounded-b-3xl text-white"
+          >
+            <ul class="p-10 space-y-10 text-center uppercase">
+              <li><a href="#home">home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#works">works</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
+            <span
+              id="close"
+              class="cursor-pointer font text-2xl absolute top-5 right-2"
+              >&#10005;</span
+            >
+          </section>
+
+          <img
+            class="hidden md:block w-5 cursor-pointer"
+            src="./dist/images/moon.png"
+            alt="mode change"
+          />
+          <span id="open" class="md:hidden cursor-pointer font text-2xl mr-2"
+            >&#9776;</span
+          >
+        </section>
+      </nav>
+
+      <!-- Introduction Section -->
+      <!-- image -->
+      <img
+        src="./dist/images/man.png"
+        alt="man photo"
+        class="absolute bottom-0 right-0 h-5/6 object-cover lg:left-0 m-auto"
+      />
+      <!--circle-->
+      <section
+        class="hidden lg:block absolute -bottom-1/4 w-big h-big -z-10 bg-indigo-900 rounded-full left-0 right-0 mx-auto"
+      ></section>
+      <!-- animated text -->
+      <section
+        class="absolute font-bold top-1/3 left-5 sm:left-10 md:left-1/4 lg:left-5 xl:left-48 text-xl sm:text-4xl md:text-6xl 2xl:text-9xl"
+      >
+        <span class="text-gray-600">Freelance</span>
+        <p id="text" class="text-red-500"></p>
+      </section>
+      <!-- text content -->
+      <section
+        class="hidden lg:flex gap-5 rounded-md flex-col absolute top-0 bottom-0 m-auto right-5 shadow-lg bg-white p-6 h-fit w-1/3"
+      >
+        <h1 class="font-bold text-4xl text-indigo-900">Hi, I'm John</h1>
+        <p class="text-gray-400">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt saepe
+          culpa doloribus, minus eum aspernatur iste dolor. Nobis esse, eum
+          earum reprehenderit vitae nihil, quaerat, minima eaque accusantium
+          harum neque.
+        </p>
+        <a
+          class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit"
+          href="#contact"
+          >Hire Me</a
+        >
+      </section>
+    </section>
+
+    <!--about section-->
+    <section class="px-10" id="about">
+      <section
+        class="container py-10 md:py-16 mx-auto flex gap-20 flex-col-reverse md:flex-row items-center"
+      >
+        <!-- left side -->
+        <section class="relative">
+          <img
+            class="h-1/4 absolute top-0 left-0 -z-10"
+            src="./dist/images/dots.png"
+            alt="dots"
+          />
+          <section class="h-full rounded-full overflow-hidden">
+            <img src="./dist//images/portrait.png" alt="portrait" />
+          </section>
+        </section>
+        <!--right side-->
+        <section class="my-auto flex flex-col gap-3">
+          <h1 class="text-indigo-600 font-bold uppercase">About Me</h1>
+          <h1 class="text-3xl font-medium">Better Design</h1>
+          <h1 class="text-3xl font-medium">Better Experience</h1>
+          <p class="text-gray-400">
+            I design and build digital products. I'm also a multi-displinary
+            maker with over 10 years of experiences in a wide range of design
+            disciplines.
+          </p>
+          <h2 class="text-gray-400 font-medium">HTML</h2>
+          <section class="w-full bg-gray-200 h-1.5 rounded-md">
+            <section class="w-full bg-indigo-600 h-1.5 rounded-md"></section>
+          </section>
+          <h2 class="text-gray-400 font-medium">Javascript</h2>
+          <section class="w-full bg-gray-200 h-1.5 rounded-md">
+            <section class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></section>
+          </section>
+          <h2 class="text-gray-400 font-medium">React</h2>
+          <section class="w-full bg-gray-200 h-1.5 rounded-md">
+            <section class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></section>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!--services-->
+    <section id="services">
+      <section class="container mx-auto">
+        <!-- top -->
+        <section class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold uppercase">services</h1>
+          <h1 class="text-3xl">What do i offer?</h1>
+          <p class="text-center w-1/2 text-gray-400">
+            My approach to website design is to create a website that
+            strengthens your company's brand while ensuring ease of use and
+            simplicity for your audience
+          </p>
+        </section>
+        <section class="flex flex-wrap">
+          <!-- cards -->
+          <section
+            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
+          >
+            <img class="w-10" src="./dist/images/icon.png" alt="card icon" />
+            <h1 class="font-medium text-lg">UX / UI Design</h1>
+            <p class="text-gray-400">
+              I specialize in creating interactive websites for individuals and
+              small businesses
+            </p>
+            <a href="#" class="text-indigo-600 font-semibold text-sm"
+              >Read More</a
+            >
+          </section>
+          <section
+            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
+          >
+            <img class="w-10" src="./dist/images/icon.png" alt="card icon" />
+            <h1 class="font-medium text-lg">UX / UI Design</h1>
+            <p class="text-gray-400">
+              I specialize in creating interactive websites for individuals and
+              small businesses
+            </p>
+            <a href="#" class="text-indigo-600 font-semibold text-sm"
+              >Read More</a
+            >
+          </section>
+          <section
+            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
+          >
+            <img class="w-10" src="./dist/images/icon.png" alt="card icon" />
+            <h1 class="font-medium text-lg">UX / UI Design</h1>
+            <p class="text-gray-400">
+              I specialize in creating interactive websites for individuals and
+              small businesses
+            </p>
+            <a href="#" class="text-indigo-600 font-semibold text-sm"
+              >Read More</a
+            >
+          </section>
+          <section
+            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
+          >
+            <img class="w-10" src="./dist/images/icon.png" alt="card icon" />
+            <h1 class="font-medium text-lg">UX / UI Design</h1>
+            <p class="text-gray-400">
+              I specialize in creating interactive websites for individuals and
+              small businesses
+            </p>
+            <a href="#" class="text-indigo-600 font-semibold text-sm"
+              >Read More</a
+            >
+          </section>
+          <section
+            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
+          >
+            <img class="w-10" src="./dist/images/icon.png" alt="card icon" />
+            <h1 class="font-medium text-lg">UX / UI Design</h1>
+            <p class="text-gray-400">
+              I specialize in creating interactive websites for individuals and
+              small businesses
+            </p>
+            <a href="#" class="text-indigo-600 font-semibold text-sm"
+              >Read More</a
+            >
+          </section>
+          <section
+            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
+          >
+            <img class="w-10" src="./dist/images/icon.png" alt="card icon" />
+            <h1 class="font-medium text-lg">UX / UI Design</h1>
+            <p class="text-gray-400">
+              I specialize in creating interactive websites for individuals and
+              small businesses
+            </p>
+            <a href="#" class="text-indigo-600 font-semibold text-sm"
+              >Read More</a
+            >
+          </section>
+        </section>
+
+        <!-- bottom -->
+      </section>
+    </section>
+
+    <!-- portfolio -->
+    <section id="works">
+      <section class="container mx-auto mt-5">
+        <!-- top -->
+        <section class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold uppercase">Portfolio</h1>
+          <h1 class="text-3xl">Works & Projects</h1>
+          <p class="text-center w-1/2 text-gray-400">
+            I help designers, small agencies and businesses bring their ideas to
+            life. Powered by figma, VS code and coffee, I can turn your
+            requirements into a well designed website.
+          </p>
+        </section>
+        <!-- bottom -->
+        <section class="p-5 sm:p-0 flex flex-wrap justify-between">
+          <section
+            class="w-full md:w-4/12 shadow-xl rounded-lg my-3 md:my-10 m-1 lg:w-1/5"
+          >
+            <img class="h-full" src="./dist/images/img-12.png" alt="" />
+          </section>
+          <section
+            class="w-full md:w-4/12 shadow-xl rounded-lg my-3 md:my-10 m-1 lg:w-1/5"
+          >
+            <img class="h-full" src="./dist/images/img-2.jpg" alt="" />
+          </section>
+          <section
+            class="w-full md:w-4/12 shadow-xl rounded-lg my-3 md:my-10 m-1 lg:w-1/5"
+          >
+            <img class="h-full" src="./dist/images/img-3.jpg" alt="" />
+          </section>
+          <section
+            class="w-full md:w-4/12 shadow-xl rounded-lg my-3 md:my-10 m-1 lg:w-1/5"
+          >
+            <img class="h-full" src="./dist/images/img-4.jpg" alt="" />
+          </section>
+          <section
+            class="w-full md:w-4/12 shadow-xl rounded-lg my-3 md:my-10 m-1 lg:w-1/5"
+          >
+            <img class="h-full" src="./dist/images/img-5.jpg" alt="" />
+          </section>
+          <section
+            class="w-full md:w-4/12 shadow-xl rounded-lg my-3 md:my-10 m-1 lg:w-1/5"
+          >
+            <img class="h-full" src="./dist/images/img-6.png" alt="" />
+          </section>
+          <section
+            class="w-full md:w-4/12 shadow-xl rounded-lg my-3 md:my-10 m-1 lg:w-1/5"
+          >
+            <img class="h-full" src="./dist/images/img-7.jpg" alt="" />
+          </section>
+          <section
+            class="w-full md:w-4/12 shadow-xl rounded-lg my-3 md:my-10 m-1 lg:w-1/5"
+          >
+            <img class="h-full" src="./dist/images/img-8.jpg" alt="" />
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!-- contact -->
+    <div id="contact" class="dark:bg-slate-900 mt-5">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold mt-4">CONTACT</h1>
+          <h1 class="text-3xl dark:text-white">Have a Question?</h1>
+          <p class="w-1/2 text-center text-gray-400">
+            Do you have an idea? Let's discuss it and see what we can do
+            together.
+          </p>
+        </div>
+        <!-- bottom -->
+        <form class="mt-5 p-8 flex flex-col gap-5 items-center">
+          <input
+            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+            type="text"
+            placeholder="Name Surname"
+          />
+          <input
+            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+            type="email"
+            placeholder="Email"
+          />
+          <textarea
+            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+            cols="30"
+            rows="10"
+            placeholder="Message..."
+          ></textarea>
+          <button
+            type="button"
+            class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md cursor-pointer"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="w-full bg-gray-800">
+      <div class="container mx-auto py-5 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <img class="w-8" src="./dist/images/logo.png" alt="" />
+          <span class="text-2xl font-bold text-white">Portwind.</span>
+        </div>
+        <span class="hidden md:block font-medium text-white"
+          >© 2022 Portwind. Design with ♥️ by Fridah.</span
+        >
+        <div class="flex gap-2">
+          <img
+            class="w-4 cursor-pointer"
+            src="./dist/images/facebook.png"
+            alt=""
+          />
+          <img
+            class="w-4 cursor-pointer"
+            src="./dist/images/instagram.png"
+            alt=""
+          />
+          <img
+            class="w-4 cursor-pointer"
+            src="./dist/images/twitter.png"
+            alt=""
+          />
+          <img
+            class="w-4 cursor-pointer"
+            src="./dist/images/linkedin.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+  <script src="./autotyping.js"></script>
+</html>
